@@ -1,0 +1,114 @@
+/* styles.css */
+
+body {
+    font-family: 'Pretendard', sans-serif;
+    background-color: #CCF7FF;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* 아래로 수직 배열되도록 설정 */
+    height: 100vh; /* 화면 전체 높이를 사용하기 위해 설정 */
+}
+
+.tittle{
+    /*border: 2px solid black;*/
+    margin-top: 0;
+    margin-left: 10vw;
+    height: 20vh;
+}
+
+.tittle h1 {
+    color: #FF0000; /* 기본 색상 설정 */
+    transition: color 0.3s; /* 색상 변화에 대한 transition 효과 설정 */
+}
+
+/* 마우스를 Back 텍스트 위에 올렸을 때 색상 변경 */
+.tittle h1:hover {
+     /* 마우스를 올렸을 때 색상 변경 */
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+
+
+
+.classname{
+    align-items: center; /* 가운데 정렬 */
+    /*border: 2px solid black;*/
+    margin-top: 0;
+    margin-left: 15vw;
+    height: 50vh;
+}
+
+/*.classname h2 {
+    animation: colorChange 0.3s infinite alternate; 
+}
+
+@keyframes colorChange {
+    0% {
+        color: white; 
+    }
+    100% {
+        color: #FF0000; 
+    }
+}*/
+
+.classname h2 {
+    color: #FF0000; /* 기본 색상 설정 */
+    transition: color 0.3s; /* 색상 변화에 대한 transition 효과 설정 */
+}
+
+/* 마우스를 h2 텍스트 위에 올렸을 때 색상 변경 */
+.classname h2:hover {
+    color: white; /* 마우스를 올렸을 때 색상 변경 */
+}
+
+
+h1 {
+    color: #FF0000;
+    font-size: 90px;
+    line-height: 15px;
+
+}
+h3 {
+    color: #FF0000;
+    font-size: 90px;
+    line-height: 15px;
+
+}
+
+h2 {
+    color: #FF0000;
+    font-size: 80px;
+    line-height: 50px
+}
+
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(-5px) rotate(-1deg); }
+    20% { transform: translateX(5px) rotate(1deg); }
+    30% { transform: translateX(-5px) rotate(-1deg); }
+    40% { transform: translateX(5px) rotate(1deg); }
+    50% { transform: translateX(-5px) rotate(-1deg); }
+    60% { transform: translateX(5px) rotate(1deg); }
+    70% { transform: translateX(-5px) rotate(-1deg); }
+    80% { transform: translateX(5px) rotate(1deg); }
+    90% { transform: translateX(-5px) rotate(-1deg); }
+    100% { transform: translateX(0); }
+  }
+  
+  .classname h2:hover {
+    animation: shake 0.5s ease;
+  }

@@ -1,0 +1,306 @@
+/* styles.css */
+
+body {
+    font-family: 'Pretendard', sans-serif;
+    background-color: #CCF7FF;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-decoration: none;
+
+}
+
+.container {
+    display: flex;
+}
+
+.tittle{
+    /*border: 2px solid black;*/
+    margin-top: 0;
+    margin-left: 10vw;
+    height: 20vh;
+}
+
+.tittle h1 {
+    color: #FF0000; /* 기본 색상 설정 */
+    transition: color 0.3s; /* 색상 변화에 대한 transition 효과 설정 */
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+
+
+
+h3 {
+    color: #FF0000;
+    font-size: 50px;
+    line-height: 15px;
+
+}
+
+h2 {
+    color: #FF0000;
+    font-size: 40px;
+    line-height: 50px
+}
+
+
+
+
+/*새로운 추가*/
+.gradient-bottom {
+    position: absolute;
+    top: 75%;
+    transform: translateX(-50%);
+    z-index: 99; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.navigation {
+    display:flex;
+    position: absolute;
+    top: 77%;
+    left: 40%;
+    transform: translateX(-50%);
+    z-index: 9999; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 10vh;
+    z-index: 9999;
+}
+
+.nav{
+    margin-left: 17vw;
+    display: flex;
+}
+
+
+h1{
+    color: black;
+    font-size: 90px;
+    line-height: 15px;
+
+}
+
+
+
+#bigcontainer{
+    display: flex;
+    overflow-y: hidden;
+    
+}
+
+
+
+
+
+/*알림창 버튼*/
+/* how to 버튼 스타일 */
+#popup-button {
+    background-color: transparent; /* 배경을 투명하게 설정 */
+    border: none; /* 테두리 제거 */
+    color: black; /* 텍스트 색상 */
+    padding: 10px 20px; /* 안쪽 여백 설정 */
+    cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능한 상태로 설정 */
+}
+
+#popup-button:hover {
+    background-color: #FF0000; /* 버튼 위에 호버 시 반투명한 흰색 배경 표시 */
+}
+
+/* 팝업 내용의 위치와 스타일 설정 */
+.popup-content {
+    background-color: black; /* 팝업 내용의 배경색 */
+    /*margin: 15% auto; /* 수직 가운데 정렬 */
+    padding: 50px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 30vw; /* 팝업 내용의 너비 */
+    height: 60vh;
+    position: fixed; /* 내용을 고정 */
+    top: 50%;
+    left: 75%; /* 화면 왼쪽에서 절반 떨어진 위치 */
+    transform: translate(-50%, -50%); /* 수평 및 수직 가운데 정렬 */
+    color: aliceblue;
+    z-index: 9999;
+}
+
+p{
+    font-size: 25px;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+    
+}
+
+/* 팝업 닫기 버튼 스타일 설정 */
+.close {
+    color: white;
+    float: right;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #ADADAD;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#ww {
+    width: 200vw;
+    height: 1vh;
+    background-color: black;
+    position: absolute;
+    top: 10%;
+    transform: translateX(-50%);
+    z-index: 99; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 0;
+    padding: 0%;
+}
+
+
+#hh {
+    width: 0.5vw;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 0;
+    padding: 0%;
+}
+
+/*왼 사진*/
+#gg {
+    position: absolute;
+    top: 3%;
+    left: 25%;
+    transform: translateX(-50%);
+    z-index: 999; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 0;
+    padding: 0%;
+}
+
+/*오른 사진*/
+#kk {
+    position: absolute;
+    top: 2%;
+    left: 70%;
+    transform: translateX(-50%);
+    z-index: 999; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 0;
+    padding: 0%;
+}
+
+
+
+
+/*컨텐츠 시도*/
+.row {
+    display: flex;
+    margin-bottom: -5px; /* 사각형들 사이의 공백을 제거합니다. */
+  }
+
+
+
+  .timer {
+    width: 35vw;
+    height: 60vh;
+    margin-top: 12vh;
+    margin-left: 16vw;
+    background-color:none;
+    /*border: 10px solid red;*/
+    z-index: 9999;
+    justify-content: center;
+    text-align: center;
+    /*border: 2px solid black;*/
+  }
+
+  /*타이머 스타일링*/
+  .stopwatch {
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    width: 15vw;
+    height: 8vh;
+    margin: 0 auto;
+}
+
+.time {
+    font-size: 60px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 45px;
+    cursor: pointer;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 12vw;
+    height: 8vh;
+    margin: 0 auto;
+}
+
+
+/*입력창*/
+.textinput {
+    width: 33vw;
+    height: 10vh;
+    margin-top: 20vh;
+    word-wrap: break-word; /* 텍스트가 길어지면 자동으로 줄 바꿈 */
+    /*border: #CCF7FF 10px solid ;*/
+}
+
+
+
+.textinput {
+    width: 35vw;
+    height: 60vh;
+    margin-top: 10vh;
+    margin-left: 8vw;
+    z-index: 9999;
+    word-wrap: break-word;
+    
+    /*border: 2px solid black;*/
+  }
+.textinput input {
+    padding: 10px;
+    width: 33vw;
+    height: 10vh;
+    border: none;
+    /*border-bottom: 2px solid #ccc;*/
+    outline: none;
+    background-color: transparent; /* 입력창의 배경색을 투명하게 설정 */
+    color: white;
+    font-size: 60px;
+    margin-bottom: 26vh;
+}
+
+.textinput input::placeholder {
+    color: #C6C6C6; /* 입력창의 플레이스홀더 텍스트 색상 */
+}

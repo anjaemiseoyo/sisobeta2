@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vertical Text Alignment</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;700&display=swap">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row"><!--1번째 줄-->
+            <div class="textinput">
+                <input type="text" id="userInput" placeholder="TEXT(입력)">
+                <input type="text" id="userInput" placeholder="TEXT(입력)">
+            </div>
+            
+            <div class="timer">
+                <div class="stopwatch">
+                    <div class="time" id="display">00:00:00</div>
+                </div>
+                <div class="buttons">
+                    <!-- <button onclick="start()">Start</button> -->
+                    <button onclick="stop()">STOP</button>
+                    <!-- <button onclick="reset()">Reset</button> -->
+                </div>
+            </div>
+          </div>
+    </div>
+    <div id="bigcontainer">
+        <div id="ww"></div>
+        <div id="hh"></div>
+        <div id="gg">
+            <img src="img/gg10.png" width="100%">
+        </div>
+        <div id="kk">
+            <img src="img/kk10.png" width="140%">
+        </div>
+        <div class="bigphoto">
+            <!-- 팝업 창 -->
+            <div class="popup" id="popup"  style="display: none;"> <!-- 수정: 팝업 요소를 닫히는 div 태그로 감쌉니다. -->
+                <div class="popup-content">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <p>세상에서 제일 빨리 82를 20번 치는 사람이 되기.
+                        이번 클래스에서는 ‘빨리’와 발음이 비슷한 ’82’를 가장 빠르게 타이핑 하는 연습을 해볼거에요. 왼쪽에 보이는 ‘TEXT(입력)’창에 마우스를 누르고 82를 20번 치는 연습을 해보세요. 이 글을 빨리 읽었을수록 더 짧은 기록을 얻을 수 있어요. 타이핑이 끝난뒤에는 Stop버튼을 눌러주세요. 기회는 한번뿐입니다. 지금이라도 시작하세요. *다만 언제나 신기록은 상대적이고 본인만의 것이라는 사실을 잊지 마세요. 문의:(+82)</p>
+                    </div>
+            </div>
+            <div class="navigation">
+                <div class="nav">
+                    <h1><a href="../class.html"> BACK</a></h1>
+                </div>
+                <div class="nav">
+                    <button id="popup-button"><h1>?</h1></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <div class="gradient-bottom">
+            <img src="img/얇은막대.png" width="330%">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Rectangle Position</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="container">
+  <div class="text-container">
+    <input type="text" class="textInput" placeholder="@한글아이디를 입력">
+    <button class="submitButton" onclick="submitText(this)">등록</button>
+  </div>
+</div>
+
+<div id="ww"></div>
+<div id="ww1"></div>
+<div id="hh"></div>
+<div id="hh1"></div>
+
+<div class="bigphoto">
+<!-- 팝업 창 -->
+<div class="popup" id="popup"  style="display: none;"> <!-- 수정: 팝업 요소를 닫히는 div 태그로 감쌉니다. -->
+  <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <p>세상에서 제일 많은 한글 아이디를 보유한 연락처<br>
+        이번 클래스에서는 세상에서 제일 많은 한국어 아이디를 보유한 연락처를 제작합니다. 
+        본인이 원하는 한글 아이디나 현재 아이디의 한글버전을 적어서 제출해주세요. 
+        더 많은 아이디를 적어줄 수록 기네스북 기록 달성에 더 가까워집니다. 
+        *주의사항: 아이디는 한글,숫자,언더바로만 구성가능하며 최대 13자입니다.
+        텍스트를 입력할때는 굳이 @를 적지 않아도 됩니다.
+        </p>
+  </div>
+</div>
+<div class="navigation">
+  <div class="nav">
+      <h1><a href="../class.html"> < BACK </a></h1>
+  </div>
+  <div class="nav">
+      <button id="popup-button"><h1>?</h1></button>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="gradient-bottom">
+<img src="img/얇은막대 1.png" width="330%">
+</div>
+
+<div class="backy">
+    <img src="img/heheh.png" width="104%">
+    </div>
+
+
+<script src="script.js" defer></script>
+</body>
+</html>

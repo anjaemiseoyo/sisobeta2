@@ -1,0 +1,266 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #CCF7FF;
+  overflow: hidden; /* 이미지가 화면을 벗어나는 것을 막습니다. */
+  font-family: 'Pretendard', sans-serif;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h1{
+  font-size: 200px;
+  text-decoration: none; /* 링크 밑줄 제거 */
+  line-height: 500px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color : #990000;
+  text-decoration: underline;
+}
+
+
+  .container {
+    display: inline;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 100vw
+  }
+
+  .row {
+    display: flex;
+    position: fixed;
+    height: 100%;
+    width: 100vw;
+    z-index: 999;
+  }
+
+/*움직이는 이미지 담은 것*/
+  .bcontainer {
+    position: relative;
+    z-index: 99;
+}
+
+  /* 이미지 스타일 */
+  .scaling-image {
+    position: absolute;
+    width: 100vw;
+    transition: transform 1.5s ease-in-out; /* 변환 효과를 줄 시간과 이징 설정 */
+  }
+  
+
+  .textbox{
+    margin-left: 10%;
+    margin-top: 60vh;;
+    width: 80%;
+    height: 95%;
+    /*border: 2px solid black;*/
+  }
+
+  h4{
+    line-height: 70px;
+    letter-spacing : -0.5px;
+    color: black;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 80px;
+  }
+
+  .ttcontainer { /*제목 담은 곳*/
+    margin-top: 2vh;
+    /*overflow: hidden; /* 텍스트가 표시되는 영역을 제한합니다. */
+    white-space: nowrap; /* 텍스트가 줄 바꿈되지 않도록 설정합니다. */
+    position: absolute;
+    z-index: 998;
+  }
+
+
+
+
+
+
+/* 21x998px 크기의 사각형 스타일 */
+.rectangle {
+  width: 1vw;
+  height: 100vh;
+  background-color: #CCF7FF;
+  margin-right: 0vw;
+  z-index: 998;
+}
+
+.rectanglea {
+  width: 13vw;
+  height: 100vh;
+  background-color: none;
+  margin-right: 0vw;
+  z-index: 999;
+}
+.rectangleb {
+  width: 3vw;
+  height: 100vh;
+  background-color: none;
+  margin-right: 0vw;
+  z-index: 998;
+}
+
+.rectanglec {
+  width: 25vw;
+  height: 100vh;
+  background-color: none;
+  margin-right: 0vw;
+  z-index: 998;
+  display: flex;
+}
+
+.rectangled {
+  width: 8.7vw;
+  height: 100vh;
+  background-color: none;
+  margin-right: 0vw;
+  z-index: 998;
+}
+
+.rectanglef {
+  width: 38vw;
+  height: 100vh;
+  background-color: none;
+  margin-right: 0vw;
+  z-index: 999;
+}
+
+
+
+
+/*방명록 발전*/
+#guestbook-form{
+  display: inline-block;
+  margin-top: 58vh;
+  /*border: 2px solid;*/
+  width: 20vw;
+  height: 40vh;
+}
+
+h3{
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 0;;
+}
+
+.form1{
+  width: 22vw;
+  height: 8vh;
+  padding-left: 1vw;
+  /*border: 2px solid blue;*/
+  display: flex;
+  margin-top: 2vh;
+}
+.form2{
+  width: 22vw;
+  height: 8vh;
+  padding-left: 1vw;
+  /*border: 2px solid blue;*/
+  display: flex;
+}
+
+.form3 {
+  width: 20vw;
+  height: 5vh;
+  /*border: 2px solid blue;*/
+  display: flex;
+  padding-left: 1vw;
+  padding-bottom: 2vh;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+  /*width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;*/
+  margin-left: 1vw;
+  width: 17vw;
+  height: 4vh;
+  background-color: #CCF7FF;
+  border: none;
+  color: black;
+  font-size: 60px;
+  font-family: 'Pretendard', sans-serif;
+  overflow: hidden;
+}
+
+button {
+  padding:0;
+  width: 10vw;
+  height: 6vh;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: red;
+}
+
+
+
+.left{
+  margin-top: 54.5vh;
+  width: 55vw;
+  height: 60vh;
+  /*border: 2px solid red;*/
+  overflow-y: scroll;
+}
+
+/*방명록 리스트 스타일 설정*/
+ul {
+  list-style-type: none;
+  padding-bottom: 2vh;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+li {
+  border-bottom: 2px solid black;
+  padding: 20px 0;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+
+
+
+/*스크롤바 스타일 변경*/
+/* 웹킷(Chrome, Safari 등) 스크롤바 스타일링 */
+/* 수직 스크롤바 */
+::-webkit-scrollbar {
+  width: 9px; /* 스크롤바 너비 */
+}
+
+::-webkit-scrollbar-track {
+  background: #CCF7FF; /* 스크롤바 트랙 배경색 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* 스크롤바 썸 배경색 */
+  border-radius: 2px; /* 스크롤바 썸 모서리 둥글기 */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* 스크롤바 썸 호버시 배경색 */
+}

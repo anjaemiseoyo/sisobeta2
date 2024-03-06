@@ -1,0 +1,556 @@
+body{
+    font-family: 'Pretendard', sans-serif;
+    background-color: #CCF7FF;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-decoration: none;
+    display: flex;
+}
+
+
+.rectangle {
+    width: 100px;
+    height: 35px;
+    background-color: black;
+    color: #CCF7FF;
+    position: absolute;
+    border-radius: 5px;
+    border: #CCF7FF;
+    top: 50%; /* 초기 위치는 화면 중앙으로 설정 */
+    left: 50%; /* 초기 위치는 화면 중앙으로 설정 */
+    transform: translate(-50%, -50%); /* 화면 중앙으로 정렬 */
+    transition: top 1s, left 1s; /* 이동 효과를 위한 transition 설정 */
+    z-index: 99991;
+    padding: 3px;
+  }
+
+  .container{
+    
+    background-color: black;
+    position: absolute;
+    top: 13%;
+    transform: translateX(-50%);
+    z-index: 99; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 0;
+    padding: 0%;
+  }
+  .text-container {
+    margin-left: 38vw;
+    margin-top: 2vh;
+    width: 28vw;
+    height: 6vh;
+    position: absolute;
+    /*border: 2px solid black;*/
+    display: flex;
+    
+    
+  }
+
+
+
+
+
+.list-item {
+    margin: 3px;
+    padding: 0.4em;
+    padding-left: 1.5em;
+    font-size: 1.4em;
+    height: 20vh;
+    width: 10vw;
+    cursor: pointer;
+    /*border: 2px solid black;*/
+  }
+  
+
+  /*새로운 추가*/
+.gradient-bottom {
+    position: absolute;
+    top: 55%;
+    transform: translateX(-50%);
+    z-index: 98; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 10vh;
+}
+
+
+#example2Left{
+    width: 11vw;
+    height: 63vh;
+    /*background-color:none;*/
+    /*border: 10px solid black;*/
+    /*border-radius: 250px;*/
+    position: absolute;
+    top: 13vh;
+    left: 22vw;
+    transform: translateX(-50%);
+    z-index: 9999; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 0;
+    padding: 0%;
+    flex-direction: column;
+
+}
+#example2Middle{
+    width: 11vw;
+    height: 63vh;
+    /*background-color:none;*/
+    
+    /*border-radius: 250px;*/
+    position: absolute;
+    top: 13vh;
+    left: 36vw;
+    transform: translateX(-50%);
+    z-index: 9999; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 0;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#example2Middle1{
+    width: 11vw;
+    height: 63vh;
+    /*background-color:none;*/
+    /*border-radius: 250px;*/
+    position: absolute;
+    top: 13vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: 9999; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 0;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#example2Middle2{
+    width: 11vw;
+    height: 63vh;
+    /*background-color:none;*/
+    /*border-radius: 250px;*/
+    position: absolute;
+    top: 13vh;
+    left: 64vw;
+    transform: translateX(-50%);
+    z-index: 9999; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 0;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+
+}
+#example2Right{
+    width: 11vw;
+    height: 63vh;
+    /*background-color:none;*/
+    /*border-radius: 250px;*/
+    position: absolute;
+    top: 13vh;
+    left: 78vw;
+    transform: translateX(-50%);
+    z-index: 9999; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 0;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+.navigation {
+    display:flex;
+    position: absolute;
+    top: 77%;
+    left: 40%;
+    transform: translateX(-50%);
+    z-index: 9999; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 10vh;
+    z-index: 9999;
+}
+
+.nav{
+    margin-left: 17vw;
+    display: flex;
+}
+
+
+h1{
+    color: black;
+    font-size: 90px;
+    line-height: 15px;
+
+}
+
+
+
+#bigcontainer{
+    display: flex;
+    overflow-y: hidden;
+    
+}
+
+
+
+
+
+/*알림창 버튼*/
+/* how to 버튼 스타일 */
+#popup-button {
+    background-color: transparent; /* 배경을 투명하게 설정 */
+    border: none; /* 테두리 제거 */
+    color: black; /* 텍스트 색상 */
+    padding: 10px 20px; /* 안쪽 여백 설정 */
+    cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능한 상태로 설정 */
+}
+
+#popup-button:hover {
+    background-color: #FF0000; /* 버튼 위에 호버 시 반투명한 흰색 배경 표시 */
+}
+
+/* 팝업 내용의 위치와 스타일 설정 */
+.popup-content {
+    background-color: black; /* 팝업 내용의 배경색 */
+    /*margin: 15% auto; /* 수직 가운데 정렬 */
+    padding: 50px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 23vw; /* 팝업 내용의 너비 */
+    height: 60vh;
+    position: fixed; /* 내용을 고정 */
+    top: 50%;
+    left: 73%; /* 화면 왼쪽에서 절반 떨어진 위치 */
+    transform: translate(-50%, -50%); /* 수평 및 수직 가운데 정렬 */
+    color: aliceblue;
+    z-index: 99991;
+}
+
+p{
+    font-size: 25px;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+    
+}
+
+/* 팝업 닫기 버튼 스타일 설정 */
+.close {
+    color: white;
+    float: right;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+
+
+
+
+#ww {
+    width: 200vw;
+    height: 1vh;
+    background-color: black;
+    position: absolute;
+    top: 13%;
+    transform: translateX(-50%);
+    z-index: 99; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 0;
+    padding: 0%;
+}
+
+
+#ww1 {
+    width: 200vw;
+    height: 1vh;
+    background-color: black;
+    position: absolute;
+    top: 80%;
+    transform: translateX(-50%);
+    z-index: 99; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 0;
+    padding: 0%;
+}
+
+
+#hh {
+    width: 0.5vw;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    left: 88%;
+    transform: translateX(-50%);
+    z-index: 99; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 0;
+    padding: 0%;
+}
+
+
+#hh1 {
+    width: 0.5vw;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    left: 12%;
+    transform: translateX(-50%);
+    z-index: 99; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 0;
+    padding: 0%;
+}
+
+#haha {
+    width: 40vw;
+    height: 10vh;
+    background-color:none;
+    border: 10px solid black;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 0;
+    padding: 0%;
+}
+
+
+
+/*가운데*/
+.tt {
+    width: 12vw;
+    height: 7vh;
+    background-color:none;
+    /*border: 20px solid black;*/
+    position: absolute;
+    top: 1vh;
+    left: 52vw;
+    transform: translateX(-50%);
+    z-index: 999; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 0;
+    padding: 0%;
+}
+
+.tt1 {
+    width: 12vw;
+    height: 7vh;
+    background-color:none;
+    /*border: 20px solid black;*/
+    position: absolute;
+    top: 1vh;
+    left: 22vw;
+    transform: translateX(-50%);
+    z-index: 999; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 0;
+    padding: 0%;
+}
+
+.tt2 {
+    width: 12vw;
+    height: 7vh;
+    background-color:none;
+    /*border: 20px solid black;*/
+    position: absolute;
+    top: 30vh;
+    left: 8vw;
+    transform: translateX(-50%);
+    z-index: 999; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 0;
+    padding: 0%;
+}
+
+.tt3 {
+    width: 12vw;
+    height: 7vh;
+    background-color:none;
+    /*border: 20px solid black;*/
+    position: absolute;
+    top: 20vh;
+    left: 89vw;
+    transform: translateX(-50%);
+    z-index: 999; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 0;
+    padding: 0%;
+}
+.tt4 {
+    width: 12vw;
+    height: 7vh;
+    background-color:none;
+    /*border: 20px solid black;*/
+    position: absolute;
+    top: 50vh;
+    left: 92vw;
+    transform: translateX(-50%);
+    z-index: 999; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 0;
+    padding: 0%;
+}
+
+.tt5 {
+    width: 12vw;
+    height: 7vh;
+    background-color:none;
+    /*border: 20px solid black;*/
+    position: absolute;
+    top: 60vh;
+    left: 8vw;
+    transform: translateX(-50%);
+    z-index: 999; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 0;
+    padding: 0%;
+}
+
+h4 {
+    color: black;
+    font-size: 50px;
+    line-height: 50px;
+    margin-top: 3vh;
+    animation: blink 1s infinite;
+    transition: transform 3s; /* 변환(회전) 효과 지속 시간 설정 */
+}
+
+
+body:hover h4 {
+    transform: rotate(360deg); /* 마우스를 움직일 때 회전하는 각도 설정 */
+}
+
+h5{
+    color: black;
+    font-size: 50px;
+    line-height: 50px;
+    margin-top: 3vh;
+    animation: blink2 5s infinite;
+}
+
+h5 {
+    transition: transform 6s; /* 변환(회전) 효과 지속 시간 설정 */
+    transform: rotate(360deg); /* 마우스를 움직일 때 회전하는 각도 설정 */
+}
+
+h6{
+    color: black;
+    font-size: 50px;
+    line-height: 50px;
+    margin-top: 3vh;
+    animation: rotate360 10s linear infinite; /* 10초 간격으로 360도 회전하는 애니메이션 */
+}
+
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg); /* 초기 각도 설정 */
+    }
+    to {
+        transform: rotate(360deg); /* 최종 각도 설정 */
+    }
+}
+
+
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+  @keyframes blink2 {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 3; }
+  }
+
+
+
+  .following-image {
+    position: absolute;
+    pointer-events: none;
+  }
+
+
+
+
+
+
+  /*이전 클래스 복제*/
+  .buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 45px;
+    cursor: pointer;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 9vw;
+    height: 8vh;
+    margin: 0 auto;
+}
+
+
+/*입력창*/
+.textInput {
+    width: 17vw;
+    height: 7.3vh;
+    margin-top: 0vh;
+    z-index: 9999;
+    font-size: 30px;
+    word-wrap: break-word; /* 텍스트가 길어지면 자동으로 줄 바꿈 */
+    background-color: #CCF7FF;
+    /*border: 2px solid black;*/
+    border-radius: 10px;
+    /*border: #CCF7FF 10px solid ;*/
+}
+
+.textinput input::placeholder {
+    color: #C6C6C6; /* 입력창의 플레이스홀더 텍스트 색상 */
+}
+
+
+
+.backy {
+    position: absolute;
+    top: 19%;
+    left: -1%;
+    transform: translateX(0%);
+    z-index: 9999; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+}

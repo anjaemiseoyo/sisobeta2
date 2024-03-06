@@ -1,0 +1,238 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #CCF7FF;
+    overflow: hidden; /* 이미지가 화면을 벗어나는 것을 막습니다. */
+    font-family: 'Pretendard', sans-serif;
+    text-decoration: none; 
+    font-size: 17px;
+}
+
+
+
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row {
+    display: flex;
+    margin-bottom: -5px; /* 사각형들 사이의 공백을 제거합니다. */
+  }
+
+  .square {
+    width: 26vw;
+    height: 44vh;
+    background-color: red;
+    z-index: 9999;
+    /*border: 2px solid black;*/
+  }
+  .blank {
+    width: 26vw;
+    height: 44vh;
+    background-color: none;
+    /*border: 2px solid black;*/
+  }
+
+  .blanka {
+    width: 78vw;
+    height: 44vh;
+    z-index: 9999;
+    background-color: none;
+    /*border: 2px solid black;*/
+  }
+
+  .navigation{
+    display: flex;
+    width: 48vw;
+    height: 8vh;
+    /*border: 2px solid black;*/
+    margin-left: 5vw;
+  }
+
+  h6{
+    font-size: 80px;
+    margin-left: 7vw;
+    margin-top: 2vh;
+    color: red;
+  }
+
+  .textbox{
+    margin-left: 10%;
+    width: 16vw;
+    height: 95%;
+    /*border: 2px solid black;*/
+  }
+
+  h4{
+    line-height: 2rem;
+    letter-spacing : -0.5px;
+    color: #CCF7FF;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 40px;
+  }
+
+  h5{
+    font-size: 40px;
+    line-height: 30px;
+    letter-spacing : -0.5px;
+    color: #A2EFFC;
+    font-weight: 400;
+  }
+
+  /*돌아가는 헤더*/
+
+  .ttcontainer {
+    margin-top: 3vh;
+    overflow: hidden; /* 텍스트가 표시되는 영역을 제한합니다. */
+    white-space: nowrap; /* 텍스트가 줄 바꿈되지 않도록 설정합니다. */
+    position: absolute;
+    justify-content: center;
+    z-index: 9999;
+  }
+
+  .text-container {
+    display: inline-block; /* 텍스트 컨테이너를 인라인 블록 요소로 지정하여 줄 바꿈을 방지합니다. */
+    
+  }
+
+  @keyframes slide {
+    0% { transform: translateX(100%); } /* 초기 위치 */
+    100% { transform: translateX(-100%); } /* 화면 왼쪽 끝까지 이동하여 반복됩니다. */
+  }
+
+  h1{
+    font-size: 20vw;
+    margin: 0; /* 기본 마진을 제거하여 레이아웃을 개선합니다. */
+    color: red;
+    
+  }
+
+  .text{
+    animation: slide 10s linear infinite; /* slide 애니메이션을 10초 동안 반복 재생합니다. */
+  }
+
+/*아래 내비게이션*/
+
+
+
+
+/*돌아가는 막대기들*/
+
+.pcontainer {
+    position: relative;
+    height: 100%;
+}
+
+/*컨텐츠를 포함하는*/
+#bigcontainer{
+    display: flex;
+    
+    
+}
+
+
+.moving-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: moveUpDown 3s infinite alternate; /* 위 아래로 움직이는 애니메이션을 설정합니다. */
+}
+
+.bingle-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: moveDown 2s infinite alternate; /* 위 아래로 움직이는 애니메이션을 설정합니다. */
+}
+
+.last-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: moveDDown 8s infinite alternate; /* 위 아래로 움직이는 애니메이션을 설정합니다. */
+}
+
+
+.small-text {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999; /* 가장 위로 올라오도록 설정합니다. */
+    margin-bottom: 10vh;
+}
+
+
+.big-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999; /* 가장 위로 올라오도록 설정합니다. */
+    justify-content: center;
+}
+
+.backimage {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99; /* 가장 위로 올라오도록 설정합니다. */
+    justify-content: center;
+}
+
+
+@keyframes moveUpDown {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: calc(100% - 100px); /* 이미지가 움직이는 거리를 설정합니다. 여기서는 화면의 높이에서 이미지의 높이를 뺀 만큼 위아래로 움직이도록 설정했습니다. */
+    }
+}
+
+
+
+@keyframes moveDown {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: calc(100% - 100px); /* 이미지가 움직이는 거리를 설정합니다. 여기서는 화면의 높이에서 이미지의 높이를 뺀 만큼 위아래로 움직이도록 설정했습니다. */
+    }
+}
+
+
+@keyframes moveDDown {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: calc(100% - 100px); /* 이미지가 움직이는 거리를 설정합니다. 여기서는 화면의 높이에서 이미지의 높이를 뺀 만큼 위아래로 움직이도록 설정했습니다. */
+    }
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color : #990000;
+    text-decoration: underline;
+  }
+
+
+
+  /*마우스 사진 효과*/
+  .follow-image {
+    position: absolute;
+    pointer-events: none; /* 마우스 이벤트가 이미지로 전달되지 않도록 설정 */
+    z-index: 9999; /* 다른 요소들 위에 표시되도록 설정 */
+}

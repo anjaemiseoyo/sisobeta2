@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sortable Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="list-container">
+      <div id="example2Left" class="list">
+        <div class="list-item"><img src="ear/image1.png" width="80%" alt="Image 1"></div>
+        <div class="list-item"><img src="ear/image2.png" width="80%" alt="Image 2"></div>
+        <div class="list-item"><img src="ear/image3.png" width="80%" alt="Image 3"></div>
+      </div>
+    </div>
+
+    <div class="list-container">
+      <div id="example2Middle" class="list">
+        <div class="list-item"><img src="ear/image4.png" width="80%" alt="Image 6"></div>
+        <div class="list-item"><img src="ear/image5.png" width="80%"alt="Image 7"></div>
+        <div class="list-item"><img src="ear/image6.png" width="80%" alt="Image 8"></div>
+      </div>
+    </div>
+  </div>
+  <div class="list-container">
+    <div id="example2Middle1" class="list">
+      <div class="list-item"><img src="ear/image7.png" width="80%" alt="Image 6"></div>
+      <div class="list-item"><img src="ear/image8.png" width="80%" alt="Image 7"></div>
+      <div class="list-item"><img src="ear/image9.png" width="80%"alt="Image 8"></div>
+    </div>
+  </div>
+</div>
+<div class="list-container">
+  <div id="example2Middle2" class="list">
+    <div class="list-item"><img src="ear/image10.png" width="80%" alt="Image 6"></div>
+    <div class="list-item"><img src="ear/image11.png" width="80%" alt="Image 7"></div>
+    <div class="list-item"><img src="ear/image12.png" width="80%"alt="Image 8"></div>
+  </div>
+</div>
+</div>
+  
+    <div class="list-container">
+      <div id="example2Right" class="list">
+        <div class="list-item"><img src="ear/image13.png" width="80%" alt="Image 6"></div>
+        <div class="list-item"><img src="ear/image14.png" width="80%" alt="Image 7"></div>
+        <div class="list-item"><img src="ear/image15.png" width="80%" alt="Image 8"></div>
+      </div>
+    </div>
+
+
+    <div class="ttbox">
+      <div class="tt">
+          <h4>1등-5등> </h4>
+      </div>
+      <div class="tt1">
+        <h5>10>4등</h5>
+    </div>
+    <div class="tt2">
+      <h4>6등>1등 </h4>
+  </div>
+  <div class="tt3">
+    <h4> 여긴15등 </h4>
+</div>
+<div class="tt4">
+  <h5>6등-10등 </h5>
+</div>
+<div class="tt5">
+  <h6>15등>1등 </h6>
+</div>
+  </div>
+        <div id="ww"></div>
+        <div id="ww1"></div>
+        <div id="hh"></div>
+        <div id="hh1"></div>
+
+    <div class="bigphoto">
+      <!-- 팝업 창 -->
+      <div class="popup" id="popup"  style="display: none;"> <!-- 수정: 팝업 요소를 닫히는 div 태그로 감쌉니다. -->
+          <div class="popup-content">
+              <span class="close" onclick="closePopup()">&times;</span>
+              <p>세상에서 제일 못생긴 귀 순위표 만들기<br>
+                여기 몇몇 유명인사들의 귀가 있습니다. 자신이 생각하는 가장 못생긴 귀의 순위를 매겨주세요. 
+                마우스로 사진을 드래그해서 순서를 바꿀 수 있습니다. 어디서부터 1등인지는 당신의 마음 먹기에 달려있습니다. 
+                기준들은 회전하고 깜빡거리면서 절대적인 기준을 만들고자 하지 않습니다. 또 하나, 시소전의 가장 마지막에 귀 순위를 바꾼 사람의 것이 최종 결과물로 선택됩니다. 
+                정해지지 않은 결과를 따를 준비가 되어 있다면 클래스를 시작하세요</p>
+          </div>
+      </div>
+      <div class="navigation">
+          <div class="nav">
+              <h1><a href="../class.html"> < BACK</a></h1>
+          </div>
+          <div class="nav">
+              <button id="popup-button"><h1>?</h1></button>
+          </div>
+      </div>
+  </div>
+</div>
+
+  <div class="gradient-bottom">
+    <img src="img/얇은막대 1.png" width="330%">
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

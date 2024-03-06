@@ -1,0 +1,125 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #CCF7FF;
+    overflow: hidden; /* 이미지가 화면을 벗어나는 것을 막습니다. */
+    font-family: 'Pretendard', sans-serif;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 50px;
+    text-decoration: none; /* 링크 밑줄 제거 */
+    line-height: 500px;
+    margin-right: 25vw;
+}
+
+.big-text {
+    position: absolute;
+    left: 63%;
+    transform: translateX(-50%);
+    z-index: 99999; /* 가장 위로 올라오도록 설정합니다. */
+    text-align: center;
+    margin-top: 28vh;
+    display: flex;
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color : #990000;
+    text-decoration: underline;
+  }
+
+.container { /*뒷 배경 움직이는 것*/
+    position: relative;
+    height: 100%;
+}
+
+/*컨텐츠를 포함하는*/
+#bigcontainer{
+    display: flex;
+    flex-direction: column; /* 세로로 요소를 배치합니다. */
+    align-items: center; /* 요소를 수직으로 가운데 정렬합니다. */
+    
+}
+
+.moving-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: moveUpDown 3s infinite alternate; /* 위 아래로 움직이는 애니메이션을 설정합니다. */
+}
+
+.bingle-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: moveDown 5s infinite alternate; /* 위 아래로 움직이는 애니메이션을 설정합니다. */
+}
+
+.small-text {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999999; /* 가장 위로 올라오도록 설정합니다. */
+    margin-bottom: 5vh;
+    width: 40vw;
+    height: 10vh;
+    text-align: center;
+    
+}
+
+h6 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+
+.backimage {
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 999; /* 가장 위로 올라오도록 설정합니다. */
+    justify-content: center;
+}
+
+.frontimage {
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 9999; /* 가장 위로 올라오도록 설정합니다. */
+    justify-content: center;
+    top: 0%;
+    left: 35%;
+    text-align: center;
+    margin-top: 0;
+    padding: 0%;
+}
+
+@keyframes moveUpDown {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: calc(100% - 100px); /* 이미지가 움직이는 거리를 설정합니다. 여기서는 화면의 높이에서 이미지의 높이를 뺀 만큼 위아래로 움직이도록 설정했습니다. */
+    }
+}
+
+
+
+@keyframes moveDown {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: calc(100% - 100px); /* 이미지가 움직이는 거리를 설정합니다. 여기서는 화면의 높이에서 이미지의 높이를 뺀 만큼 위아래로 움직이도록 설정했습니다. */
+    }
+}
